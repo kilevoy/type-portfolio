@@ -36,3 +36,28 @@ footer.mast{border:0}
 @media(max-width:42rem){.section-head,.sheets{grid-template-columns:1fr}.intro{display:block}.jump{margin-top:.75rem}.mast,.strap,figcaption,.jump{font-size:.75rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+
+/* Typeface directory */
+.catalog-intro{padding-block:clamp(3.5rem,8vw,7rem) clamp(3rem,6vw,5rem);display:grid;grid-template-columns:1.4fr 1fr;gap:2rem;align-items:end}
+.eyebrow,.catalog-heading p,.detail-top,.card-info p{font-family:Consolas,"Courier New",monospace;font-size:.8rem;letter-spacing:.07em;text-transform:uppercase}
+.eyebrow{margin:0 0 1.5rem;color:var(--soft)}
+.catalog-intro h1{font-size:clamp(3.7rem,8.4vw,8rem);font-weight:normal;letter-spacing:-.06em;line-height:.91;margin:0}
+.catalog-intro h1 em{font-weight:normal;color:#806050}
+.catalog-copy{font-size:clamp(1.05rem,1.8vw,1.4rem);line-height:1.5;max-width:23rem;margin:0 0 .3rem auto}
+.catalog{padding-bottom:clamp(4rem,8vw,7rem)}
+.catalog-heading{border-top:1px solid var(--ink);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding-block:1.3rem}
+.catalog-heading h2{font-size:1.5rem;font-weight:normal;margin:0}
+.catalog-heading p{color:var(--soft);margin:0}
+.catalog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,4vw,3.5rem)}
+.type-card a{text-decoration:none;display:block}
+.cover{overflow:hidden;background:#ddd;aspect-ratio:3/2}
+.cover img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.type-card a:hover .cover img{transform:scale(1.025)}
+.card-info{display:flex;align-items:start;justify-content:space-between;gap:1rem;padding:1.05rem 0;border-bottom:1px solid var(--rule)}
+.card-info h3{font-size:clamp(1.6rem,2.8vw,2.3rem);font-weight:normal;line-height:1.05;letter-spacing:-.03em;margin:0 0 .6rem}
+.card-info p{color:var(--soft);line-height:1.5;margin:0;text-transform:none;letter-spacing:.02em}
+.card-info>span{font-size:1.5rem;line-height:1}
+.detail-top{padding-top:2rem;display:flex;justify-content:space-between;gap:1rem;color:var(--soft)}
+.detail-top a{color:var(--ink)}
+@media(max-width:42rem){.catalog-intro,.catalog-grid{grid-template-columns:1fr}.catalog-copy{margin:0}.catalog-intro{gap:1.7rem}.catalog-grid{gap:2.5rem}}
+@media(prefers-reduced-motion:reduce){.cover img{transition:none}}

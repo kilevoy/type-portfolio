@@ -10,7 +10,7 @@ a:focus-visible{outline:2px solid #80342d;outline-offset:5px}
 .mast,.strap,.intro,figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
 .mast{padding-block:1.35rem;border-bottom:1px solid var(--rule)}
 .mast a{text-decoration:none}.mast a:hover{text-decoration:underline}
-.mast nav{display:flex;gap:clamp(.9rem,3vw,2.4rem)}
+.mast nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:clamp(.9rem,3vw,2.4rem)}
 .brand{font-weight:bold}
 .strap{padding-block:.9rem;border-top:1px solid var(--ink);text-transform:uppercase}
 .hero{padding-top:clamp(2.3rem,8vw,7rem)}

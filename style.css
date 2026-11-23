@@ -1,0 +1,38 @@
+:root{color-scheme:light;--paper:#f4efdf;--ink:#203930;--soft:#45574d;--rule:#b7b9a7;--mint:#dbe3ce;--gutter:clamp(1.1rem,5.7vw,5.6rem);font-family:Georgia,serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.3em}
+a:focus-visible{outline:2px solid #80342d;outline-offset:5px}
+.layout{width:min(100% - 2 * var(--gutter),82rem);margin-inline:auto}
+.mast,.strap,figcaption,.jump{font-family:Consolas,"Courier New",monospace;font-size:.82rem;letter-spacing:.05em}
+.mast,.strap,.intro,figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.mast{padding-block:1.35rem;border-bottom:1px solid var(--rule)}
+.mast a{text-decoration:none}.mast a:hover{text-decoration:underline}
+.mast nav{display:flex;gap:clamp(.9rem,3vw,2.4rem)}
+.brand{font-weight:bold}
+.strap{padding-block:.9rem;border-top:1px solid var(--ink);text-transform:uppercase}
+.hero{padding-top:clamp(2.3rem,8vw,7rem)}
+h1{margin:clamp(2rem,6vw,5rem) 0 clamp(1.6rem,5vw,4rem)}
+h1 img{width:100%}
+.intro{border-bottom:1px solid var(--ink);padding-bottom:clamp(1.6rem,4vw,3.5rem);align-items:flex-end}
+.intro p{font-size:clamp(1.2rem,2.6vw,2.2rem);line-height:1.35;max-width:25em;margin:0}
+.jump{white-space:nowrap;display:inline-block;padding:.7rem 0}
+.work{padding-block:clamp(3rem,8vw,7rem)}
+.section-head{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1rem,5vw,5rem);margin-bottom:2.3rem}
+.section-head h2{font-size:clamp(2.2rem,5vw,4.35rem);line-height:1.02;font-weight:normal;letter-spacing:-.04em;margin:0}
+.section-head p{margin:.25rem 0 .8rem;font-size:1.15rem;line-height:1.55;color:var(--soft)}
+.sheets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem clamp(1rem,4vw,3rem)}
+figure{min-width:0;margin:0}
+figure img{width:100%;background:#e8e4d5}
+figcaption{padding-top:.75rem;line-height:1.45}
+figcaption span{color:var(--soft);text-align:right}
+.about{background:var(--mint);padding-block:clamp(2.7rem,7vw,6rem);border-block:1px solid var(--rule)}
+.about .section-head{margin-bottom:0}
+footer.mast{border:0}
+.skip{position:absolute;top:.5rem;left:.5rem;padding:.75rem;background:white;transform:translateY(-160%)}
+.skip:focus{transform:none}
+@media(max-width:42rem){.section-head,.sheets{grid-template-columns:1fr}.intro{display:block}.jump{margin-top:.75rem}.mast,.strap,figcaption,.jump{font-size:.75rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+

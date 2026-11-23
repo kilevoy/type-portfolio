@@ -59,5 +59,6 @@ footer.mast{border:0}
 .card-info>span{font-size:1.5rem;line-height:1}
 .detail-top{padding-top:2rem;display:flex;justify-content:space-between;gap:1rem;color:var(--soft)}
 .detail-top a{color:var(--ink)}
+@media(min-width:64rem){.catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:42rem){.catalog-intro,.catalog-grid{grid-template-columns:1fr}.catalog-copy{margin:0}.catalog-intro{gap:1.7rem}.catalog-grid{gap:2.5rem}}
 @media(prefers-reduced-motion:reduce){.cover img{transition:none}}
